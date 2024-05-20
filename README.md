@@ -24,3 +24,9 @@ This command will also execute the Python script which will create our terraform
 		make docker-clean
 This command will remove the Docker image with the specified IMAGE_NAME.
 
+# Result
+
+- Once all the above commands are executed you will be able to see the **naming_module** and **parent_module** directory with their respective terraform files.
+  <img width="1532" alt="Screenshot 2024-05-19 at 5 04 58 PM" src="https://github.com/rutavmodi25/TerraformProject/assets/69160502/435da66f-a060-4958-b4df-b5ca4941431f">
+
+
