@@ -19,7 +19,6 @@ This command will also execute the Python script which will create our terraform
 
 # Cleaning Up
 - To remove the Docker image from your system, use:
- make docker-clean
 
 		make docker-clean
 This command will remove the Docker image with the specified IMAGE_NAME.
