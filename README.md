@@ -14,15 +14,14 @@ This command will build the Docker image with the specified IMAGE_NAME and tag i
 - To run the Docker container interactively, execute:
 
 		make docker-run
-  This command will create a Docker container based on the previously built image. It mounts the current directory ($(shell pwd)) inside the container at the WORKDIR location. You can interact with the container's shell to 
+  This command will create a Docker container based on the previously built image. It mounts the current directory ($(shell pwd)) inside the container at the WORKDIR location.
+  This command will also execute the Python script which will create our terraform files and apply them. Also added a test module that will test our functionality and output our results.
 # Launch Docker Shell
 - To launch the docker shell, execute:
 
 		make docker-shell
   This command will launch the docker shell.
 run Terraform commands.
-
-This command will also execute the Python script which will create our terraform files and apply them. Also added a test module that will test our functionality and output our results.
 
 # Cleaning Up
 - To remove the Docker image from your system, use:
