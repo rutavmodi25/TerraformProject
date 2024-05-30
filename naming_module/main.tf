@@ -1,4 +1,4 @@
-naming_module_template = """variable "base_name" {
+variable "base_name" {
   description = "The base name of the resource:"
   type        = string
 }
@@ -24,37 +24,3 @@ output "resource_name" {
   description = "Generated resource name.."
   value       = local.resource_name[var.resource_type]
 }
-"""
-
-parent_module_template = """variable "resources" {
-  description = "A map is created based with keys as base names and values resource types."
-  type        = map(string)
-}
-
-module "naming_modules" {
-  source = "../naming_module"
-
-  for_each = var.resources
-
-  base_name     = each.key
-  resource_type = each.value
-}
-
-output "resource_names" {
-  value       = { for k, v in module.naming_modules : k => v.resource_name }
-}
-"""
-
-test_module_template = """module "parent" {
-  source    = "../parent_module"
-  resources = {
-    "TestingTesting1" = "virtual_machine"
-    "TEST2" = "key_vault"
-    "TEst--3" = "storage_account"
-  }
-}
-
-output "resource_names" {
-  value = module.parent.resource_names
-}
-"""
