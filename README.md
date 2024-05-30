@@ -47,11 +47,14 @@ Step 2: Testing terraform code through code generation (python file).
 
 # Result
 
+- Once the docker shell is executed we can navigate to the test module and execute the terraform init and apply command.   
+<img width="1358" alt="Screenshot 2024-05-29 at 6 46 31 PM" src="https://github.com/rutavmodi25/TerraformProject/assets/69160502/9c79eb04-8f1b-440a-a070-8d69f97e48d8">
+
 - Once all the above commands are executed you will be able to see the **naming_module** and **parent_module** directory with their respective terraform files. Additionally, the test module has been added to ensure the functionalities of the code.
 
   <img width="1190" alt="Screenshot 2024-05-29 at 6 49 52 PM" src="https://github.com/rutavmodi25/TerraformProject/assets/69160502/1f7e98ea-f97b-48e4-98cc-006f5e530107">
 
-  <img width="1358" alt="Screenshot 2024-05-29 at 6 46 31 PM" src="https://github.com/rutavmodi25/TerraformProject/assets/69160502/9c79eb04-8f1b-440a-a070-8d69f97e48d8">
+  
 
 
 
